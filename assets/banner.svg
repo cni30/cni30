@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-labelledby="bannerTitle bannerDesc">
+  <title id="bannerTitle">计算机视觉 · 深度学习 · 桌面应用</title>
+  <desc id="bannerDesc">装饰横幅：两侧是叶片与检测框图标，中间是「计算机视觉 · 深度学习 · 桌面应用」以及技术关键词 PYTHON · PYTORCH · YOLO · QT。背景透明，浅色与深色主题下均可阅读。</desc>
+
+  <defs>
+    <!-- 主渐变：叶绿 -> 科技蓝，中调色，白底与深底都能看清 -->
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1FA97A"/>
+      <stop offset="1" stop-color="#2F80ED"/>
+    </linearGradient>
+    <!-- 叶片填充：极低透明度，避免白色/深色主题下出现色块感 -->
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1FA97A" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#2F80ED" stop-opacity="0.20"/>
+    </linearGradient>
+    <!-- 两端淡出的细线 -->
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1FA97A" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#2F80ED" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#2F80ED" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- 叶片 + 目标检测框（呼应检测类项目） -->
+    <g id="leafbox">
+      <g fill="none" stroke="url(#ink)" stroke-width="2.6" stroke-linecap="round" opacity="0.85">
+        <path d="M-52 -44 L-52 -30 M-52 -44 L-38 -44"/>
+        <path d="M52 -44 L52 -30 M52 -44 L38 -44"/>
+        <path d="M-52 44 L-52 30 M-52 44 L-38 44"/>
+        <path d="M52 44 L52 30 M52 44 L38 44"/>
+      </g>
+      <path d="M-30 0 Q0 -34 32 0 Q0 34 -30 0 Z" fill="url(#wash)" stroke="url(#ink)" stroke-width="2.4"/>
+      <path d="M-28 0 L30 0" stroke="url(#ink)" stroke-width="2" opacity="0.95"/>
+      <g stroke="url(#ink)" stroke-width="1.6" opacity="0.7" stroke-linecap="round" fill="none">
+        <path d="M-12 -5 L-2 -15"/>
+        <path d="M0 -4 L10 -14"/>
+        <path d="M12 -3 L20 -10"/>
+        <path d="M-12 5 L-2 15"/>
+        <path d="M0 4 L10 14"/>
+        <path d="M12 3 L20 10"/>
+      </g>
+    </g>
+  </defs>
+
+  <!-- 左右对称的图形元素 -->
+  <use href="#leafbox" transform="translate(150 100) scale(0.86)"/>
+  <use href="#leafbox" transform="translate(1050 100) scale(0.86)"/>
+
+  <!-- 中文主标题 -->
+  <text x="600" y="90" text-anchor="middle" font-size="34" font-weight="600" letter-spacing="6"
+        fill="url(#ink)"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', Roboto, Helvetica, Arial, sans-serif">计算机视觉 · 深度学习 · 桌面应用</text>
+
+  <!-- 分割细线 -->
+  <path d="M420 118 L780 118" stroke="url(#fade)" stroke-width="2" fill="none"/>
+
+  <!-- 英文关键词 -->
+  <text x="600" y="146" text-anchor="middle" font-size="15" letter-spacing="5" fill="#6B7688"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">PYTHON · PYTORCH · YOLO · QT</text>
+</svg>
